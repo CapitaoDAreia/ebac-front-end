@@ -1,0 +1,100 @@
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #EEEEEE;
+
+    display: flex;
+}
+
+.pheader{
+    width: 100vw;
+    height: 12vh;
+    background-color: #041562 ;
+    color: #EEEEEE;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.psection{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+}
+.circle{
+    width: 1vw;
+    height: 2vh;
+
+    border-radius: 50%;
+
+    background-color: #DA1212;
+    color: #DA1212;
+
+    box-shadow: .1em .1em 1em 0em black;
+
+    margin: 5%;
+    padding: 5%;   
+
+    transition: 1s;
+    overflow: hidden;
+}
+.circle:hover{
+    width: 50vw;
+    height: 50vh;
+
+    border-radius: 2%;
+    color: #EEEEEE;
+}
+
+
+.particle1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 99vw;
+    
+}
+.articlecontent h2{
+    margin-bottom: 2%;
+}
+
+@media (max-width: 749px) {
+    .circle{
+        width: 1vw;
+        height: 2vh;
+    
+        border-radius: 50%;
+    
+        background-color: #DA1212;
+        color: #DA1212;
+    
+        box-shadow: .1em .1em 1em 0em black;
+        padding: 3%;   
+    
+        transition: 1s;
+        overflow: hidden;
+    }
+
+    .particle1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+        margin-top: 10%;
+        
+    }
+
+    .circle:hover{
+        width: 50vw;
+        height: 20vh;
+    
+        border-radius: 2%;
+        color: #EEEEEE;
+    }
+    .articlecontent{
+        width: 50%;
+    }
+}
+

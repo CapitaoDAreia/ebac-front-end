@@ -1,0 +1,89 @@
+/*GENERAL CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*INDEX CSS*/
+#index-body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #041562;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-content{
+   width: 45%;
+   height: 70%;
+   border: #EEEEEE solid 1px;
+   background-color: #EEEEEE;
+
+   padding: 2em;
+   border-radius: 1em 0em 0em 1em;
+
+   box-shadow: 1em 0em 1em 0em;  
+}
+#aside-content{
+    border: #FFE3E3 solid 1px;
+    width: 35%;
+    height: 70%;
+    margin-left: 0em;
+    box-shadow: 1em 0em 1em 0em;
+}
+
+@media (max-width: 600px) {
+
+    #index-body{
+        flex-wrap: wrap;
+    }
+
+    #main-content{
+
+        width: 100%;
+        height: 50%;
+        border-radius: 1em;
+    }
+    #aside-content{
+        position: absolute;
+        width: 30%;
+        height: auto;
+        bottom: 29%;
+        border-radius: 1em;
+        box-shadow: none;
+
+        display: flex;
+        justify-content: center;
+    }
+    #aside-content img{
+        border-radius: 1em;
+        box-shadow: none;
+        max-width: 136px;
+        max-height: 142px;
+
+    }
+}
+
+@media (min-width: 600px) {
+    #aside-content{
+        width: 50%;
+    }
+
+}
+
+
+@media (max-width: 594px) {
+    #main-content{
+        width: 60%;
+        height: 70%;
+     
+        padding: 1em; 
+     }
+}
+
+
+
+
