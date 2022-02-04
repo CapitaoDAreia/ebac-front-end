@@ -152,20 +152,23 @@ footer{
     height: auto;
     margin-top: 1rem;
 
-    background: radial-gradient(#3E065F, #161515);
+    background: radial-gradient(rgb(63, 6, 96), #161515);
     border-radius: 1rem;
 }
 
 
 
 
-/*BARRA DE ROLAGEM*/
+/*SCROLL BAR*/
 ::-webkit-scrollbar {
     width: .3rem;
   }
+  
   ::-webkit-scrollbar-track {
     background: #161515; 
   }
+   
+  
   ::-webkit-scrollbar-thumb {
     background: #5f1888; 
   }
