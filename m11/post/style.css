@@ -176,3 +176,25 @@ footer{
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+  /*FORMULÁRIO*/
+.form{
+    width: 100%;
+    margin-top: 0%;
+    
+}
+
+.cog-form__container{
+    margin-top: 10% !important;
+    border-radius: 1rem;
+    color: #f0e5e5 !important;
+    height: 400px !important;
+    overflow: hidden !important;
+}
+.cog-form__content{
+    margin-left: 5%;
+}
+.title2{
+    text-align: center;
+    margin-top: 5%;
+}
