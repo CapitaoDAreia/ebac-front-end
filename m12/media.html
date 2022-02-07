@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média 3</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #7882A4;
+            color: white;
+        }
+
+        header {
+            margin: auto;
+            text-align: center;
+            background-color: #9b9898;
+        }
+
+        section {
+            width: 80%;
+            height: 60%;
+            border-radius: 1rem;
+            background-color: #9b9898;
+            margin: auto;
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        section h1 {
+            font-size: 1.5rem;
+            margin-top: 10%;
+        }
+
+        section input {
+            width: 20%;
+            max-width: 150px;
+            margin-top: 5%;
+        }
+
+        section #resultado {
+            margin-top: 5%;
+        }
+
+        section #D {
+            margin-top: 5%;
+            width: 8rem;
+            height: 2.5rem;
+            border-radius: 1rem;
+            border: 1px solid #F76E11;
+            background-color: #F76E11;
+            color: white;
+        }
+
+        section #D:active {
+            width: 8.3rem;
+            height: 2.7rem;
+            background-color: #9b9898;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        @media (max-width:400px) {
+
+            section {
+                height: 40%;
+            }
+
+            section h1 {
+                margin-top: 30%;
+            }
+
+            section input {
+                margin-top: 20%;
+            }
+
+            section #resultado {
+                margin-top: 20%;
+            }
+
+            section #D {
+                margin-top: 20%;
+            }
+        }
+
+        @media (max-width:930px) {
+
+            section {
+                height: 40%;
+            }
+
+            section h1 {
+                margin-top: 20%;
+            }
+
+            section input {
+                margin-top: 10%;
+            }
+
+            section #resultado {
+                margin-top: 10%;
+            }
+
+            section #D {
+                margin-top: 10%;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Média 3</h1>
+    </header>
+    <section>
+        <h1>Digite seus números nos campos abaixo!</h1>
+        <input type="number" name="" id="A" min="0" max="100">
+        <input type="number" name="" id="B" min="0" max="100">
+        <input type="number" name="" id="C" min="0" max="100">
+        <p id="resultado">Seu resultado aparecerá aqui...</p>
+
+        <div>
+            <input type="button" value="Calcular" id="D" onclick="calcular()">
+        </div>
+
+    </section>
+    <footer>
+        <p><em>Desenvolvido por <strong>Igor Silva</strong> para o curso de Front-End da <strong>EBAC</strong></em></p>
+    </footer>
+    <script>
+        function calcular() {
+            let A = Number(window.document.getElementById("A").value)
+            let B = Number(window.document.getElementById("B").value)
+            let C = Number(window.document.getElementById("C").value)
+
+            let resultado = window.document.getElementById("resultado")
+
+            resultado.innerHTML = `A média dos três números é ${(A + B + C) / 3}`
+        }
+    </script>
+</body>
+
+</html>
