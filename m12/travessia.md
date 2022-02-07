@@ -1,4 +1,4 @@
-# Algorito de Resoluyção do Problema Travessia
+# Algorito de Resolução do Problema Travessia
 ## Ebac Profissão: Fullstack Python - Igor Silva
 
 - Iniciar **resolução**
