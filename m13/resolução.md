@@ -33,6 +33,12 @@
 
 ## Exercício 2 - Responda as perguntas de acordo com as variáveis.
 
+var branco = “preto”;
+var preto = “cinza”;
+var cinza = “branco”;
+var carro = “preto”;
+var valor = 30000;
+var prestacao = 750;
 
 a) carro === branco 
 = true
