@@ -1,0 +1,171 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  /*General Style Mobile First*/
+  background-color: #EEEEEE;
+  overflow-x: hidden;
+}
+
+body section:nth-child(1) {
+  background: linear-gradient(45deg, #fbac7f, #e5658a);
+}
+
+body section:nth-child(2) {
+  background-image: url(../img/background2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "title" "form1" "form2";
+    -ms-grid-rows: 20% 50% 30%;
+        grid-template-rows: 20% 50% 30%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  body section:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    text-align: center;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #EEEEEE;
+  }
+  body section:nth-child(1) h1 {
+    margin-top: 10%;
+  }
+  body section:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: form1;
+  }
+  body section:nth-child(2) form {
+    margin-top: 5%;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "top" "middle" "bottom" "foot";
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (20%)[4];
+        grid-template-rows: repeat(4, 20%);
+    grid-row-gap: .3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.5rem;
+    color: #1f1f1f;
+  }
+  body section:nth-child(2) form input {
+    width: 100%;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+  body section:nth-child(2) form div:nth-child(4) input {
+    max-width: 300px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 10px;
+  }
+  body section:nth-child(2) form div:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: top;
+  }
+  body section:nth-child(2) form div:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: middle;
+  }
+  body section:nth-child(2) form div:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: bottom;
+  }
+  body section:nth-child(2) form div:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: foot;
+  }
+  body section:nth-child(2) form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: center;
+    width: 90%;
+  }
+  body section:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: form2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  body section:nth-child(3) div:nth-child(1) {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  body section:nth-child(3) div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: lighter;
+  }
+  body section:nth-child(3) div:nth-child(2) input {
+    width: 90%;
+    height: 40px;
+    font-size: 1.2rem;
+    max-width: 320px;
+  }
+  body section:nth-child(3) div:nth-child(2) input:nth-child(2) {
+    background-color: #0d6786;
+    color: #EEEEEE;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  body section:nth-child(3) div:nth-child(2) input:nth-child(2):hover {
+    background-color: #07556e;
+  }
+  body section:nth-child(3) div:nth-child(2) input:nth-child(2):active {
+    background-color: #EEEEEE;
+  }
+}
+/*# sourceMappingURL=main.css.map */

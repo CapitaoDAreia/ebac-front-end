@@ -1,0 +1,62 @@
+@import './variables.scss';
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    /*General Style Mobile First*/
+    background-color: $main-color;
+    section:nth-child(1){
+        background: linear-gradient(45deg, #fbac7f, #e5658a);
+    }
+    section:nth-child(2){
+        background-image: url(../img/background2.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+
+    @media (max-width: 600px) {
+        width: 100vw;
+        min-height: 100vh;
+
+        @include layout-mobile;
+        section:nth-child(1){
+            grid-area: title;
+            @include title-mobile;
+
+        }
+
+        section:nth-child(2){
+            grid-area: form1;
+            form{
+                @include form1-mobile;
+
+                div:nth-child(1){
+                    grid-area: top;
+                }
+                div:nth-child(2){
+                    grid-area: middle;
+                }
+                div:nth-child(3){
+                    grid-area: bottom;
+                }
+                div:nth-child(4){
+                    grid-area: foot;
+                }
+                div{
+                    @include adjust-div-form1;
+                }
+            }
+            
+
+        }
+        section:nth-child(3){
+            grid-area: form2;
+            @include form2-mobile;
+        }
+    }
+    overflow-x: hidden;
+}

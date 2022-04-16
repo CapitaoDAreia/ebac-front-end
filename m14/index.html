@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/document.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Formulary</title>
+</head>
+<body>
+
+    <section>
+        <h1>HTML Form Templates</h1>
+        <p>Designed to <strong>EBAC Full Stack Python</strong> by <em>Igor Siva</em></p>
+    </section>
+
+    <section>
+        <form id="form1">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <input type="button" value="Submit">
+            </div>
+        </form>
+    </section>
+    <section>
+        <div>
+            <h2>Subscribe for more!</h2>
+        </div>
+        <div>
+            <input type="email" name="email2" id="email2" placeholder="Email">
+            <input type="button" value="Subscribe" onclick="verify()">
+        </div>
+
+    </section>
+<script src="./scripts/general.js"></script>
+</body>
+</html>

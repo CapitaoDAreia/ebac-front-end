@@ -1,0 +1,262 @@
+$main-color: #EEEEEE;
+$secondary-color: #999898;
+
+@mixin layout-mobile {
+    display: grid;
+    grid-template-areas:"title"
+                        "form1"
+                        "form2";
+    grid-template-rows: 20% 50% 30%;
+    grid-template-columns: 100%;
+}
+@mixin title-mobile {
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    text-align: center;
+    font-size: 1.1rem;
+    h1{
+        margin-top: 10%;
+    }
+    color: #EEEEEE;
+}
+@mixin form1-mobile {
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas:"top"
+                        "middle"
+                        "bottom"
+                        "foot";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 20%);
+    grid-row-gap: .3rem;
+
+    justify-content: center;
+
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    input{
+        width: 100%;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+    div:nth-child(4) input{
+        max-width: 300px;
+        align-self: center;
+        margin-top: 10px;
+    }
+}
+@mixin adjust-div-form1 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 90%;
+}
+
+@mixin form2-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    text-transform: uppercase;
+    div:nth-child(1){
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+    div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: lighter;
+        input{
+            width: 90%;
+            height: 40px;
+            font-size: 1.2rem;
+            max-width: 320px;
+        }
+
+        input:nth-child(2){
+            background-color: #0d6786;
+            color: #EEEEEE;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                background-color: #07556e;
+            }
+            &:active{
+                background-color: #EEEEEE;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@mixin layout-1000px {
+    display: grid;
+    grid-template-areas:"title"
+                        "form1"
+                        "form2";
+    grid-template-rows: 20% 40% 40%;
+    grid-template-columns: 100%;
+}
+@mixin title-1000px {
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    text-align: center;
+    font-size: 1.5rem;
+    h1{
+        margin-top: 5%;
+    }
+    color: #EEEEEE;
+
+}
+@mixin form1-1000px {
+    max-width: 620px;
+    height: 100%;
+
+    display: grid;
+    grid-template-areas:"top top2 top3"
+                        "fot fot fot";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    input{
+        width: 100%;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+    div:nth-child(4) input{
+        max-width: 300px;
+        align-self: center;
+        margin-top: 10px;
+    }
+}
+@mixin form2-1000px {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    text-transform: uppercase;
+    div:nth-child(1){
+        font-size: 1.3rem;
+        font-weight: lighter;
+    }
+    div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: lighter;
+        input{
+            width: 90%;
+            height: 40px;
+            font-size: 1.2rem;
+            max-width: 320px;
+        }
+        input:nth-child(2){
+            background-color: #0d6786;
+            color: #EEEEEE;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            &:hover{
+                background-color: #07556e;
+            }
+            &:active{
+                background-color: #EEEEEE;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@mixin layout {
+    display: grid;
+    grid-template-areas:"title"
+                        "form1"
+                        "form2";
+    grid-template-rows: 20% 50% 30%;
+    grid-template-columns: 100%;
+}
+@mixin title {
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    text-align: center;
+    font-size: 1.5rem;
+    h1{
+        margin-top: 2%;
+    }
+    color: #EEEEEE;
+
+}
+@mixin form1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    input{
+        width: 100%;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+    div:nth-child(4) input{
+        margin-top: 10px;
+    }
+}
+
+@mixin form2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    text-transform: uppercase;
+    div:nth-child(1){
+        font-size: 1.3rem;
+        font-weight: lighter;
+    }
+    div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: lighter;
+        input{
+            width: 90%;
+            height: 40px;
+            font-size: 1.2rem;
+            max-width: 320px;
+        }
+        input:nth-child(2){
+            background-color: #0d6786;
+            color: #EEEEEE;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            &:hover{
+                background-color: #07556e;
+            }
+            &:active{
+                background-color: #EEEEEE;
+            }
+        }
+    }
+}
+

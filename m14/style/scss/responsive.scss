@@ -1,0 +1,67 @@
+@import './variables.scss';
+
+@media  (min-width: 601px) and (max-width: 1000px) {
+    body{
+        width: 100vw;
+        height: auto;
+        min-height: 600px;
+        @include layout-1000px;
+        
+    
+        section:nth-child(1){
+            grid-area: title;
+            @include title-1000px;
+        }
+        section:nth-child(2){
+            grid-area: form1;
+            display: flex;
+            justify-content: center;
+
+            form{
+                @include form1-1000px;
+
+                div:nth-child(1){
+                   grid-area: top;
+                }
+                div:nth-child(2){
+                    grid-area: top2;
+                }
+                div:nth-child(3){
+                    grid-area: top3;
+                }
+                div:nth-child(4){
+                    grid-area: fot;
+                }
+                div{
+                    @include adjust-div-form1;
+                }
+            }
+        }
+        section:nth-child(3){
+            @include form2-1000px;
+        }
+    }
+}
+
+@media (min-width: 1001px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        min-height: 700px;
+        @include layout;
+        section:nth-child(1){
+            grid-area: title;
+            @include title;
+        }
+        section:nth-child(2){
+            grid-area: form1;
+            @include form1;
+
+        }
+        section:nth-child(3){
+            grid-area: form2;
+            @include form2;
+        }
+    }
+
+}
